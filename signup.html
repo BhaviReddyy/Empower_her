@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f9;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        header {
+            background-color: #0077cc;
+            color: white;
+            padding: 15px 0;
+        }
+        
+        img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+        
+        main {
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+            text-align: left;
+        }
+        
+        fieldset {
+            border: 2px solid #0077cc;
+            border-radius: 8px;
+            padding: 15px;
+        }
+        
+        legend {
+            font-weight: bold;
+            color: #0077cc;
+        }
+        
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        button {
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+            width: 100%;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #005fa3;
+        }
+        
+        footer {
+            background-color: #0077cc;
+            color: white;
+            padding: 10px;
+            margin-top: 30px;
+        }
+        
+        a {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>DreamWorld Travel - Sign Up</h1>
+    </header>
+
+    <!-- Welcome Image -->
+    <img src="https://i.postimg.cc/jSMWXxDL/maldives.jpg" alt="Welcome to DreamWorld Travel">
+
+    <p><a href="#">Click here</a> to explore accessibility and semantic rules.</p>
+
+    <!-- Main Section -->
+    <main>
+        <section>
+            <p>Welcome to our travel community! Please fill in the form below to sign up and start your journey with us.</p>
+
+            <form>
+                <fieldset>
+                    <legend>Sign Up Form</legend>
+
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+            <option value="">Select gender</option>
+            <option>Female</option>
+            <option>Male</option>
+            <option>Other</option>
+          </select>
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+                    <button type="submit">Sign Up</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2025 Bhavya Reddy | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
