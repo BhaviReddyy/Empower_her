@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Course Box</title>
+    <style>
+        /* Universal selector */
+        
+        * {
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* Body styling */
+        
+        body {
+            background-color: #f5f5f5;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        /* Course box using ID selector */
+        
+        #course-box {
+            background-color: white;
+            border: 2px solid #ddd;
+            border-radius: 15px;
+            width: 300px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        /* Hover pseudo-class */
+        
+        #course-box:hover {
+            transform: translateY(-5px);
+            border-color: #e40046;
+        }
+        /* Descendant combinator */
+        
+        #course-box h3 {
+            color: #222;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        
+        #course-box p {
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        /* Child combinator */
+        
+        #course-box>h4 {
+            color: #e40046;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+        /* Sibling combinator */
+        
+        #course-box h3+p {
+            color: #777;
+            font-style: italic;
+        }
+        /* Button container */
+        
+        .button-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        /* Class selector */
+        
+        .btn {
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        
+        .btn.learn {
+            background-color: #e40046;
+            color: white;
+        }
+        
+        .btn.brochure {
+            background-color: white;
+            border: 2px solid #e40046;
+            color: #e40046;
+        }
+        /* Hover pseudo-class for buttons */
+        
+        .btn:hover {
+            background-color: #b60035;
+            color: white;
+        }
+        /* Grouping selector */
+        
+        header,
+        footer {
+            text-align: center;
+            margin: 10px 0;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h2>Masai Course Boxes</h2>
+    </header>
+
+    <!-- Example Course Box 1 -->
+    <div id="course-box">
+        <h4>IIM Sirmaur</h4>
+        <h3>EDGE: Essentials of Data Analytics, Gen AI & Execution</h3>
+        <p>06 months | Online</p>
+        <p><strong>Qualifier test:</strong> 12th Nov 2025</p>
+        <div class="button-container">
+            <button class="btn learn">Learn more</button>
+            <button class="btn brochure">Brochure →</button>
+        </div>
+    </div>
+
+    <!-- Example Course Box 2 -->
+    <div id="course-box">
+        <h4>IIM Trichy</h4>
+        <h3>Product Management in the Agentic AI Era</h3>
+        <p>06 months | Online</p>
+        <p><strong>Qualifier test:</strong> 12th Nov 2025</p>
+        <div class="button-container">
+            <button class="btn learn">Learn more</button>
+            <button class="btn brochure">Brochure →</button>
+        </div>
+    </div>
+
+    <!-- Example Course Box 3 -->
+    <div id="course-box">
+        <h4>NMIMS CDOE</h4>
+        <h3>Online MBA</h3>
+        <p>02 years | Online</p>
+        <p><strong>Qualifier test:</strong> 12th Nov 2025</p>
+        <div class="button-container">
+            <button class="btn learn">Learn more</button>
+            <button class="btn brochure">Brochure →</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Masai Course Box Design - By Bhavya</p>
+    </footer>
+
+</body>
+
+</html>
