@@ -1,22 +1,36 @@
 # Empower_her
-This repository contains my assignments from the Empower Her Program, focused on learning HTML and CSS.
 
-📂 Assignments
+This repository contains all my assignments from the **Empower Her Program**, focused on learning and practicing **HTML**, **CSS**, and basic **web development** concepts.
 
-| File Name | Description |
-|------------|-------------|
-| signup.html | Signup page using HTML forms |
-| report.html | Report card webpage using HTML tables |
-| combinators mastery.html | Practicing CSS combinators |
-| masai course box.html | Layout using HTML and box model |
-| selector challenge.html | CSS selector challenge |
-| sim selector.html | Similar selector practice |
+---
 
-💡 Objective
+## 📘 About
 
-To practice and improve my web development skills through hands-on assignments using HTML and CSS.
+The assignments in this repository cover different topics from the Empower Her learning modules.  
+Each task helped me understand and apply core web development concepts through practical exercises.
 
-👩‍💻 Author
+---
 
-Bhavya Reddy  
-https://github.com/BhaviReddyy
+## 🧠 Skills Covered
+
+- HTML structure and semantics  
+- CSS styling and selectors  
+- Layout and design principles  
+- Forms, tables, and accessibility basics  
+- Responsive web design fundamentals  
+
+---
+
+## 🚀 How to View
+
+You can open any `.html` file directly in your browser  
+or view it live (after enabling GitHub Pages) at:
+
+👉 **https://bhavireddyy.github.io/Empower_her/**
+
+---
+
+## 👩‍💻 Author
+
+**Bhavya Reddy**  
+[GitHub Profile](https://github.com/BhaviReddyy)
