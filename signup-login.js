@@ -1,5 +1,5 @@
 function signup(userName) {
-    let users = ["Bhavya", "Ravi", "Priya"]; // existing users
+    let users = ["Bhavya", "Ravi", "Priya"];
 
     if (users.includes(userName)) {
         return "User Already Registered, Please Login";
@@ -28,4 +28,5 @@ console.log(signup("NewUser")); // Output: Signup Successful, Please Login
 
 console.log(login("Bhavya", "Emp@123")); // Output: Login Successful...
 console.log(login("Ravi", "wrongpass")); // Output: Wrong Password....
+
 console.log(login("NewUser", "Emp@123")); // Output: User Not Found, Please Signup
