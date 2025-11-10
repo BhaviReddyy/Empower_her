@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Selector Assignment</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /* Universal Selector */
+        
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* ID Selector */
+        
+        #header {
+            background-color: #0b0d17;
+            /* dark background */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 50px;
+        }
+        /* Logo Section */
+        
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .logo span {
+            color: #007bff;
+            /* blue "Be" text */
+        }
+        /* Class Selector for navigation links */
+        
+        .navlink {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        /* Pseudo-class hover effect */
+        
+        .navlink:hover {
+            color: #007bff;
+            text-decoration: underline;
+        }
+        /* Pseudo-class for first navigation link */
+        
+        nav a:first-child {
+            color: #007bff;
+            font-weight: bold;
+        }
+        /* Grouping selector: apply same margin/padding to header and footer */
+        
+        header,
+        footer {
+            margin: 0;
+            padding: 15px 0;
+        }
+        /* Footer */
+        
+        footer {
+            background-color: #0b0d17;
+            color: #aaa;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header id="header">
+        <div class="logo"><span>Be</span>blog</div>
+
+        <nav>
+            <a href="#" class="navlink">Home</a>
+            <a href="#" class="navlink">Web design</a>
+            <a href="#" class="navlink">WordPress</a>
+            <a href="#" class="navlink">About us</a>
+            <a href="#" class="navlink">BeAdvice</a>
+            <a href="#" class="navlink">Buy BeTheme</a>
+        </nav>
+    </header>
+
+    <!-- Footer Section -->
+    <footer>
+        © 2025 BeBlog. All Rights Reserved.
+    </footer>
+
+</body>
+
+</html>
