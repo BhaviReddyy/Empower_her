@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Challenge</title>
+    <style>
+        /* Universal selector for font and box sizing */
+        
+        * {
+            font-family: 'Georgia', serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        /* Grouping selectors for header and footer common style */
+        
+        header,
+        footer {
+            margin: 10px;
+            padding: 15px;
+        }
+        /* ID selector for header section */
+        
+        #top-section {
+            background-color: #5d7260;
+            /* dark green */
+            color: #f5e8cf;
+            /* cream text */
+            border: 3px solid #2d3d33;
+            padding: 40px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        /* Class selector for second section */
+        
+        .bottom-section {
+            background-color: #f4f1ea;
+            color: #3a3a3a;
+            border: 3px solid #ccc;
+            padding: 40px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        /* Heading styles */
+        
+        h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+        /* Paragraph styles */
+        
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        /* Pseudo-class to style first paragraph differently */
+        
+        p:first-child {
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        /* Hover effect on h2 text */
+        
+        h2:hover {
+            color: #1d2e22;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="top-section">
+        <p>Each new idea defined</p>
+        <h2>We stand firm on our values that sit central to everything we do.</h2>
+    </header>
+
+    <section class="bottom-section">
+        <p>Every note is distinct</p>
+        <h2>We <em>deep-dive</em> into your back catalogue to understand the beat.</h2>
+    </section>
+
+    <footer>
+        <p style="text-align:center; font-size:14px;">© 2025 Masai Design Challenge</p>
+    </footer>
+</body>
+
+</html>
