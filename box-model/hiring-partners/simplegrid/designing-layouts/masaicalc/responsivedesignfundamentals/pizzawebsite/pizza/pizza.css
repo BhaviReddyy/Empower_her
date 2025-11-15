@@ -3,10 +3,14 @@ body {
     margin: 0;
 }
 
+
+/* NAVBAR */
+
 .navbar {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    align-items: center;
     border-bottom: 2px solid #ddd;
 }
 
@@ -18,13 +22,19 @@ body {
 .navbar button {
     background: red;
     color: white;
-    padding: 10px, 20px;
+    padding: 10px 20px;
     border: none;
 }
+
+
+/* TITLE */
 
 .title {
     margin-left: 20px;
 }
+
+
+/* CARD GRID */
 
 .cards {
     display: grid;
@@ -37,15 +47,23 @@ body {
     background: #e53935;
     text-align: center;
     padding: 20px;
-    color: #ddd;
+    color: white;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
 }
 
 .card button {
-    background: #ddd;
+    background: white;
     padding: 8px 15px;
     border: none;
     margin-top: 10px;
 }
+
+
+/* EXPLORE */
 
 .explore {
     display: flex;
@@ -61,12 +79,15 @@ body {
     padding: 6px 12px;
 }
 
+
+/* BOTTOM SECTION */
+
 .bottom {
     display: flex;
     justify-content: space-between;
     background: #e6ddf6;
     padding: 40px;
-    allign-items: center;
+    align-items: center;
 }
 
 .bottom img {
