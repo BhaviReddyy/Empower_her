@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar button {
+    background: red;
+    color: white;
+    padding: 10px, 20px;
+    border: none;
+}
+
+.title {
+    margin-left: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 20px;
+}
+
+.card {
+    background: #e53935;
+    text-align: center;
+    padding: 20px;
+    color: #ddd;
+}
+
+.card button {
+    background: #ddd;
+    padding: 8px 15px;
+    border: none;
+    margin-top: 10px;
+}
+
+.explore {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.explore div button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    background: #e6ddf6;
+    padding: 40px;
+    allign-items: center;
+}
+
+.bottom img {
+    width: 250px;
+}
+
+.buttons img {
+    width: 140px;
+    margin-right: 10px;
+}
