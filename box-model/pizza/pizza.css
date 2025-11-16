@@ -1,10 +1,12 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-img {
-    image-orientation: from-image;
+body {
+    background: #fff;
 }
 
 .container {
@@ -13,131 +15,128 @@ img {
     padding: 20px;
 }
 
-img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-{
-    box-sizing: border-box;
-}
-
 
 /* NAVBAR */
 
-.navbar {
+header {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
     align-items: center;
-    border-bottom: 2px solid #ddd;
+    padding: 20px 40px;
+    border-bottom: 1px solid #eee;
 }
 
-.nav-links {
-    display: flex;
-    gap: 20px;
+.logo {
+    font-size: 26px;
+    font-weight: bold;
 }
 
-.navbar button {
+nav p {
+    display: inline-block;
+    margin: 0 15px;
+    color: #333;
+    font-size: 15px;
+}
+
+.download-btn {
     background: red;
-    color: white;
-    padding: 10px 20px;
+    color: #fff;
     border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
 }
 
 
-/* TITLE */
+/* Section Title */
 
-.title {
-    margin-left: 20px;
+.section-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 40px 40px 20px;
 }
 
 
-/* CARD GRID */
+/* ORDER GRID */
 
-.cards {
+.order-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    padding: 20px 0 40px;
 }
 
 .card {
-    background: #e53935;
+    background: #fff;
+    padding: 25px;
     text-align: center;
-    padding: 20px;
-    color: white;
+}
+
+.red {
+    background: #e50000;
+    color: #fff;
 }
 
 .card img {
     width: 150px;
-    height: 150px;
+    margin-bottom: 15px;
 }
 
 .card button {
-    background: white;
-    padding: 8px 15px;
+    background: #fff;
+    color: #e50000;
     border: none;
+    padding: 8px 15px;
+    font-weight: bold;
+    cursor: pointer;
     margin-top: 10px;
 }
 
 
-/* EXPLORE */
+/* EXPLORE SECTION */
 
-.explore {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 40px;
+.explore-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+}
+
+.explore-card {
+    border: 1px solid #ddd;
+    padding: 20px;
     text-align: center;
 }
 
-.explore div button {
-    background: red;
-    color: white;
-    border: none;
-    padding: 6px 12px;
+.explore-card span {
+    margin-top: 12px;
+    display: inline-block;
+    color: red;
+    font-weight: bold;
 }
 
 
-/* BOTTOM SECTION */
+/* DOWNLOAD SECTION */
 
-.bottom {
+.download-section {
     display: flex;
     justify-content: space-between;
-    background: #e6ddf6;
-    padding: 40px;
     align-items: center;
+    background: #f4f2ff;
+    padding: 40px;
+    gap: 30px;
 }
 
-.bottom img {
-    width: 250px;
+.store-buttons img {
+    width: 150px;
+    margin: 10px;
 }
 
-.buttons img {
-    width: 140px;
-    margin-right: 10px;
-}
 
-@media screen and (max-width: 600px) {
-    .navbar {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-    }
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .cards {
-        grid-template-columns: 1fr;
-    }
-    .explore {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
-    .bottom {
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+    .download-section {
         flex-direction: column;
         text-align: center;
     }
