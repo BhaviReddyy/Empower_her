@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+/* NAVBAR */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+nav p {
+    display: inline-block;
+    margin: 0 15px;
+    color: #333;
+    font-size: 15px;
+}
+
+.download-btn {
+    background: red;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/* Section Title */
+
+.section-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 40px 40px 20px;
+}
+
+
+/* ORDER GRID */
+
+.order-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    padding: 20px 0 40px;
+}
+
+.card {
+    background: #fff;
+    padding: 25px;
+    text-align: center;
+}
+
+.red {
+    background: #e50000;
+    color: #fff;
+}
+
+.card img {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.card button {
+    background: #fff;
+    color: #e50000;
+    border: none;
+    padding: 8px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+/* EXPLORE SECTION */
+
+.explore-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+}
+
+.explore-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.explore-card span {
+    margin-top: 12px;
+    display: inline-block;
+    color: red;
+    font-weight: bold;
+}
+
+
+/* DOWNLOAD SECTION */
+
+.download-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f4f2ff;
+    padding: 40px;
+    gap: 30px;
+}
+
+.store-buttons img {
+    width: 150px;
+    margin: 10px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+    .download-section {
+        flex-direction: column;
+        text-align: center;
+    }
+}

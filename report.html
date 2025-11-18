@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Report Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f5f7fa;
+            text-align: center;
+        }
+        
+        header {
+            background-color: #0077b6;
+            color: white;
+            padding: 15px 0;
+            border-radius: 10px;
+        }
+        
+        main {
+            background-color: #ffffff;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 70%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        
+        h2,
+        h3 {
+            text-align: center;
+            color: #023e8a;
+        }
+        
+        .student-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .info-text {
+            flex: 1;
+            line-height: 1.8;
+        }
+        
+        .profile-pic {
+            flex: 0 0 120px;
+            margin-left: 20px;
+        }
+        
+        .profile-pic img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 2px solid #0077b6;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid #000;
+        }
+        
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #caf0f8;
+        }
+        
+        tfoot td {
+            font-weight: bold;
+            background-color: #e0f7fa;
+        }
+        
+        aside {
+            margin-top: 15px;
+            font-style: italic;
+            background-color: #eaf4fc;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        
+        footer {
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 2px solid #0077b6;
+            text-align: center;
+        }
+        
+        .signature {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        
+        button {
+            margin-top: 10px;
+            background-color: #0077b6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #023e8a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Student Report Card</h2>
+    </header>
+
+    <main>
+        <section class="student-info">
+            <div class="info-text">
+                <h3>Basic Information</h3>
+                <p><strong>Name:</strong> Bhavya</p>
+                <p><strong>Gender:</strong> Female</p>
+                <p><strong>Class:</strong> 10</p>
+                <p><strong>Section:</strong> A</p>
+                <p><strong>Academic Year:</strong> 2025–2026</p>
+            </div>
+            <div class="profile-pic">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="Student Profile Picture">
+            </div>
+        </section>
+
+        <section>
+            <h3>Academic Performance</h3>
+            <table>
+                <tr>
+                    <th>Subject</th>
+                    <th>Marks Obtained</th>
+                    <th>Maximum Marks</th>
+                </tr>
+                <tr>
+                    <td>Mathematics</td>
+                    <td>90</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Science</td>
+                    <td>88</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td>84</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Social Studies</td>
+                    <td>86</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Computer Science</td>
+                    <td>92</td>
+                    <td>100</td>
+                </tr>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total Marks: 440 out of 500</td>
+                        <td>Signature: ____________________</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <aside>
+            <p><strong>Remarks:</strong> Excellent performance! Keep up the great work!</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>© 2025 School Name | Authorized by Headmaster</p>
+        <div class="signature">Headmaster Signature: ____________________</div>
+        <button>Print Report Card</button>
+    </footer>
+
+</body>
+
+</html>
